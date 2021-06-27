@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">ProgramSuite</th></tr><tr><td><a href="#t0">ProgramTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">1,556</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ProgramSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ProgramTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.example.demo.SeleniumExapmle</td><td><a href="#m0">whenAboutBaeldungIsLoaded_thenAboutEugenIsMentionedOnPage</a></td><td rowspan="1">1622711700018</td><td rowspan="1">1555</td></tr></tbody></table><h2>ProgramTest</h2><h3 id="m0">com.example.demo.SeleniumExapmle#whenAboutBaeldungIsLoaded_thenAboutEugenIsMentionedOnPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 89
+Current browser version is 91.0.4472.77 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.11.0&apos;, revision: &apos;e59cfb3&apos;, time: &apos;2018-03-11T20:26:55.152Z&apos;
+System info: host: &apos;DESKTOP-R0UOHF1&apos;, ip: &apos;192.168.209.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00D9E7D3+124883]
+	Ordinal0 [0x00D9E7B1+124849]
+	GetHandleVerifier [0x00FE8688+193832]
+	GetHandleVerifier [0x01003AC5+305509]
+	GetHandleVerifier [0x0100021B+291003]
+	GetHandleVerifier [0x00FFE0AC+282444]
+	GetHandleVerifier [0x01024A90+440624]
+	GetHandleVerifier [0x010247FC+439964]
+	GetHandleVerifier [0x0102154B+426987]
+	GetHandleVerifier [0x01004FFD+310941]
+	GetHandleVerifier [0x01005D8E+314414]
+	GetHandleVerifier [0x01005D19+314297]
+	GetHandleVerifier [0x010C31EC+1089676]
+	GetHandleVerifier [0x010C17C9+1082985]
+	GetHandleVerifier [0x010C13A3+1081923]
+	GetHandleVerifier [0x011BD9FD+2115741]
+	Ordinal0 [0x00EEB82E+1488942]
+	Ordinal0 [0x00E85A7D+1071741]
+	Ordinal0 [0x00E8559B+1070491]
+	Ordinal0 [0x00E854B1+1070257]
+	Ordinal0 [0x00EBFF53+1310547]
+	BaseThreadInitThunk [0x761EFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x778C7A7E+286]
+	RtlGetAppContainerNamedObjectPath [0x778C7A4E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:132)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at com.example.demo.SeleniumExapmle.whenAboutBaeldungIsLoaded_thenAboutEugenIsMentionedOnPage(SeleniumExapmle.java:29)
+	at com.example.demo.TestngXMLusingCode.testNgSuite(TestngXMLusingCode.java:34)
+	at com.example.demo.cronDemo.runTestng(cronDemo.java:21)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

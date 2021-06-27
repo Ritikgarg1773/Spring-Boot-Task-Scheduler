@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ProgramSuite]">
+  <test name="ProgramTest(failed)">
+    <classes>
+      <class name="com.example.demo.SeleniumExapmle">
+        <methods>
+          <include name="whenAboutBaeldungIsLoaded_thenAboutEugenIsMentionedOnPage"/>
+        </methods>
+      </class> <!-- com.example.demo.SeleniumExapmle -->
+    </classes>
+  </test> <!-- ProgramTest(failed) -->
+</suite> <!-- Failed suite [ProgramSuite] -->
